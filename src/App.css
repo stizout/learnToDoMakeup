@@ -1,33 +1,176 @@
-.App {
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.buttons-container {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttons-container-fixed {
+  background-color: aqua;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+.header-banner {
+  width: 100%;
+  background-image: url("https://www.mecca.com.au/on/demandware.static/-/Sites-MeccaAU-Library/default/dw49abba4c/images/category-landing/P2.1a1-Makeup-cat-banner_v02.jpg");
+  height: 8em;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.left-header, .right-header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-header {
+  width: 15%;
+}
+
+.right-header {
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.carousel-image img {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  transition: ease-in-out;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-align {
+  align-items: center;
+}
+
+.main-body, .about-us-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.top-section {
+  margin: 1.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-left {
+  font-size: 1.1em;
+  width: 50%;
+
+}
+
+.main-emphasis {
+  font-size: 2em;
+}
+
+.bottom-section {
+  margin: 1.5em 0;
+}
+
+.bottom-section h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.two-question {
+  justify-content: space-around;
+  margin: 2em 0;
+}
+
+.two-question div {
+  width: 30%;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+
+.about-us-container {
+  display: flex;
+  margin: 150px auto;
+}
+
+.slide-half {
+  flex: 1;
+  background-color: purple;
+}
+
+.slide-half h1, h5 {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.promo-half {
+  flex: .3;
+  background-color: yellow;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.slide {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slide h4 {
+  width: 20%;
+  background-color: red;
+  margin-left: 2.5%;
+}
+
+.about-us-image {
+  width: 600px;
+  height: 400px;
+}
+
+.about-img-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: yellow;
+  margin-left: 6em;
+}
+
+.prev-buttons-container {
+  position: absolute;
+  left: 1px;
+  color: blue;
+  z-index: 2;
+  top: 45%;
+  left: .4em;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.next-buttons-container {
+  position: absolute;
+  display: flex;
+  right: 1px;
+  color: blue;
+  z-index: 2;
+  top: 45%;
+  right: .4em;
+  font-size: 2em;
+  cursor: pointer;
+
 }
